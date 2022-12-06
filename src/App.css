@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+li.nav-item{
+font-size:xx-large;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+span.navbar.text{
+  size: 20px;
+  color: rgb(16, 16, 34);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: blue;
+}
+svg.svg.inline--fa.fa-card-shpping{
+  size: 244px;
+  color: bisque;
+}
+div.card.lg-10{
+  min-height: min-content;
+ background-color: rgb(253, 248, 248);
+width: 90%;
+height: 0px;
+align-items: center;
+}
+img.card-img-top
+{
+  height: 180px;
+  margin-left: 350px;
+  width: 50%;
+  align-items: center;
+}
+div.container-fluid{
+  height: 50px;
+  background-color: rgb(181, 181, 248);
+}
+img{
+  height: 150px;
+}
+div.card{
+  height: 150px;
+  margin-bottom: 160px;
+  border: none;
+  margin-top: 17px;
+}
+ img.card-img{
+  height: 400px;
+}
+div.row{
+  margin-top: 19px;
+  align-items: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
