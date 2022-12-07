@@ -3,13 +3,14 @@ import './App.css';
 import Nav from './Nav';
 import Item from './Item';
 import Cart from './Cart'
+import { useState } from 'react';
 import('../node_modules/bootstrap/dist/css/bootstrap.min.css')
 
 function App() {
   let product = [
     {
       id:1,
-      FLAVIOURS: "Mint Chocolate",
+      FLAVIOURS: "MITE",
       img: "https://www.listchallenges.com/f/items/17dcc38c-9352-474b-b489-0205c59076b1.jpg",
       price:120
     }, {
@@ -50,10 +51,24 @@ function App() {
       price: "241"
     },
   ];
-  const addToCart=(product)=>{
-    alert(product.price)
-  }
+  const [cartList,setCart]=useState ([]);
+  const [totel ,setTotel]=useState (0);
 
+
+  let addToCart=(product)=>{
+    setCart([...cartList,product])
+    setTotel(totel+product.price)
+   
+  };
+let removeCart=(product) => {
+  let itemIndex=cartList.findIndex(item=> product.id === item.id)
+  console.log(product )
+  cartList.splice(itemIndex, 1)
+  setCart([...cartList])
+  setTotel(totel-product.price)
+  
+
+} ;
   
 
   return <div>
@@ -75,9 +90,10 @@ function App() {
 
         <div className="col-lg-3">
           <div className="row">
+            <h3>Cart</h3>
+            <Cart cartList={cartList} removeCart={removeCart}/>
             
-            <Cart />
-            <h3>TOTAL</h3>
+            <h3>TOTAL:{totel}</h3>
           </div>
         </div>
       </div>

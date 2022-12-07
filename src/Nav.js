@@ -9,7 +9,7 @@ function Nav() {
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" ><img src='https://th.bing.com/th/id/OIP.6lzM78Coam8B2ElUXsi7MAHaHa?pid=ImgDet&w=177&h=90&c=7'></img></a>
+                <a class="navbar-brand" ><img id="nav"  src='https://th.bing.com/th/id/OIP.6lzM78Coam8B2ElUXsi7MAHaHa?pid=ImgDet&w=177&h=90&c=7'></img></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

@@ -8,7 +8,7 @@ span.navbar.text{
   size: 20px;
   color: rgb(16, 16, 34);
   align-items: center;
-  background-color: blue;
+  background-color: rgb(255, 85, 0)!important;
 }
 svg.svg.inline--fa.fa-card-shpping{
   size: 244px;
@@ -16,7 +16,7 @@ svg.svg.inline--fa.fa-card-shpping{
 }
 div.card.lg-10{
   min-height: min-content;
- background-color: rgb(253, 248, 248);
+ background-color: rgb(241, 6, 6);
 width: 90%;
 height: 0px;
 align-items: center;
@@ -27,19 +27,26 @@ img.card-img-top
   margin-left: 350px;
   width: 50%;
   align-items: center;
+  border-radius: none !important;
+  box-shadow: none !important;
+ 
 }
 div.container-fluid{
   height: 50px;
-  background-color: rgb(181, 181, 248);
+  background-color: rgb(102, 102, 238);
 }
 img{
   height: 150px;
+  border-radius: 30px !important;
+  box-shadow : 5px 5px 20px rgb(42, 41, 41);
+
 }
 div.card{
   height: 150px;
   margin-bottom: 160px;
   border: none;
   margin-top: 17px;
+  color: rgb(251, 8, 8);
 }
  img.card-img{
   height: 400px;
@@ -48,4 +55,8 @@ div.row{
   margin-top: 19px;
   align-items: auto;
 }
-
+#nav{
+  box-shadow:2px 2px 20px black;
+  border-radius: 70px;
+  height: 50px;
+}
